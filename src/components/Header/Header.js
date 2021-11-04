@@ -101,8 +101,8 @@ export default function Header() {
         <NavbarLeft>
           <NavbarSiteName>共筆部落格</NavbarSiteName>
           <NavbarList>
-            <Nav to="/">Lists</Nav>
-            <Nav to="/about">About</Nav>
+            <Nav to="/react-week22/">Lists</Nav>
+            <Nav to="/react-week22/about">About</Nav>
           </NavbarList>
         </NavbarLeft>
         <NavbarRight>

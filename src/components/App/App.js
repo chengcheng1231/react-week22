@@ -38,7 +38,7 @@ function App() {
         <Router>
           <Header />
           <Switch>
-            <Route exact basename="/">
+            <Route exact basename="/react-week22/">
               <HomePage />
             </Route>
             <Route basename="/react-week22/about">
