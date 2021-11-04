@@ -101,7 +101,7 @@ export default function Header() {
         <NavbarLeft>
           <NavbarSiteName>共筆部落格</NavbarSiteName>
           <NavbarList>
-            <Nav to="/home">Lists</Nav>
+            <Nav to="/">Lists</Nav>
             <Nav to="/about">About</Nav>
           </NavbarList>
         </NavbarLeft>

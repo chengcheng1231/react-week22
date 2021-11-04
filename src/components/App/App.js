@@ -38,7 +38,7 @@ function App() {
         <Router>
           <Header />
           <Switch>
-            <Route exact basename="/home">
+            <Route exact basename="/">
               <HomePage />
             </Route>
             <Route basename="/about">
