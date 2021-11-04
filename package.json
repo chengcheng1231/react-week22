@@ -20,7 +20,7 @@
     "sweetalert2": "^11.1.9",
     "web-vitals": "^1.1.2"
   },
-  "homepage": "http://chengcheng1231.github.io/react-week22",
+  "homepage": "http://chengcheng1231.github.io/react-week22/about",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
