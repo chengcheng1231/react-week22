@@ -38,22 +38,22 @@ function App() {
         <Router>
           <Header />
           <Switch>
-            <Route exact path="/">
+            <Route exact basename="/">
               <HomePage />
             </Route>
-            <Route path="/about">
+            <Route basename="/about">
               <AboutPage />
             </Route>
-            <Route path="/write">
+            <Route basename="/write">
               <WritePage />
             </Route>
-            <Route path="/signin">
+            <Route basename="/signin">
               <SignInPage />
             </Route>
-            <Route path="/signup">
+            <Route basename="/signup">
               <SignUpPage />
             </Route>
-            <Route path="/page/:slug">
+            <Route basename="/page/:slug">
               <SinglePage />
             </Route>
           </Switch>
