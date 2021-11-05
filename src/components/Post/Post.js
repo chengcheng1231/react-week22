@@ -60,7 +60,7 @@ export default function Post({
       <PostTime>{new Date(postData.createdAt).toDateString()}</PostTime>
       <PostTitle>{postData.title}</PostTitle>
       <PostContent>{postData.body}</PostContent>
-      <PostReadMore to={`/react-week22/page/${postData.id}`}>Read more...</PostReadMore>
+      <PostReadMore to={`/page/${postData.id}`}>Read more...</PostReadMore>
       <PostHr></PostHr>
     </PostLayout>
   )

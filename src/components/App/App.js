@@ -11,7 +11,7 @@ import { useState, useEffect } from 'react'
 import { AuthContext } from "../../contexts";
 import { getMe } from "../../WebAPI";
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Switch,
   Route
 } from "react-router-dom";
@@ -38,22 +38,22 @@ function App() {
         <Router>
           <Header />
           <Switch>
-            <Route exact basename="/react-week22">
+            <Route exact path="/">
               <HomePage />
             </Route>
             <Route path="/about">
               <AboutPage />
             </Route>
-            <Route path="/react-week22">
+            <Route path="/write">
               <WritePage />
             </Route>
-            <Route path="/react-week22">
+            <Route path="/signin">
               <SignInPage />
             </Route>
-            <Route path="/react-week22">
+            <Route path="/signup">
               <SignUpPage />
             </Route>
-            <Route path="/react-week22/page/:slug">
+            <Route path="/page/:slug">
               <SinglePage />
             </Route>
           </Switch>

@@ -90,8 +90,8 @@ export default function Header() {
     setAuthToken("")
     setUser(null)
     successAlert("log out successfully!", "See you soon!", "success")
-    if (location.pathname !== "/react-week22/") {
-      history.push("/react-week22/")
+    if (location.pathname !== "/") {
+      history.push("/")
     }
   }
 
@@ -101,17 +101,17 @@ export default function Header() {
         <NavbarLeft>
           <NavbarSiteName>共筆部落格</NavbarSiteName>
           <NavbarList>
-            <Nav to="/react-week22/">Lists</Nav>
-            <Nav to="/about1">About</Nav>
+            <Nav to="/">Lists</Nav>
+            <Nav to="/about">About</Nav>
           </NavbarList>
         </NavbarLeft>
         <NavbarRight>
           <NavbarList>
             <NavbarListRight>
-              {user && <Nav to="/react-week22/write" $active={location.pathname === "/react-week22/write"}>Write a story</Nav>}
-              {user && <Nav to="/react-week22/" onClick={handleLogout}>Sign out</Nav>}
-              {!user && <Nav to="/react-week22/signin" $active={location.pathname === "/react-week22/signin"}>Sign in</Nav>}
-              {!user && <Nav to="/react-week22/signup" $active={location.pathname === "/react-week22/signup"}>Sign up</Nav>}
+              {user && <Nav to="/write" $active={location.pathname === "/write"}>Write a story</Nav>}
+              {user && <Nav to="/" onClick={handleLogout}>Sign out</Nav>}
+              {!user && <Nav to="/signin" $active={location.pathname === "/signin"}>Sign in</Nav>}
+              {!user && <Nav to="/signup" $active={location.pathname === "/signup"}>Sign up</Nav>}
             </NavbarListRight>
             <NavbarAvatar>
               <NavbarAvatarImage/>
