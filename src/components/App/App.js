@@ -41,16 +41,16 @@ function App() {
             <Route exact path="/react-week22">
               <HomePage />
             </Route>
-            <Route basename="/react-week22">
+            <Route basename="/react-week22/about">
               <AboutPage />
             </Route>
             <Route basename="/react-week22">
               <WritePage />
             </Route>
-            <Route basename="/react-week22">
+            <Route basename="/react-week22/signin">
               <SignInPage />
             </Route>
-            <Route basename="/react-week22">
+            <Route path="/react-week22/signup">
               <SignUpPage />
             </Route>
             <Route path="/react-week22/page/:slug">
