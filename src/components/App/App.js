@@ -41,7 +41,7 @@ function App() {
             <Route exact basename="/react-week22">
               <HomePage />
             </Route>
-            <Route path="/react-week22">
+            <Route path="/about">
               <AboutPage />
             </Route>
             <Route path="/react-week22">
