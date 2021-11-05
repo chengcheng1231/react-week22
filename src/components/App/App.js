@@ -38,16 +38,16 @@ function App() {
         <Router>
           <Header />
           <Switch>
-            <Route exact basename="/react-week22">
+            <Route exact path="/react-week22">
               <HomePage />
             </Route>
-            <Route basename="/react-week22">
+            <Route path="/react-week22">
               <AboutPage />
             </Route>
-            <Route basename="/react-week22">
+            <Route path="/react-week22">
               <WritePage />
             </Route>
-            <Route basename="/react-week22/signin">
+            <Route path="/react-week22/signin">
               <SignInPage />
             </Route>
             <Route path="/react-week22/signup">
