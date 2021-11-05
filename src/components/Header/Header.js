@@ -90,8 +90,8 @@ export default function Header() {
     setAuthToken("")
     setUser(null)
     successAlert("log out successfully!", "See you soon!", "success")
-    if (location.pathname !== "/") {
-      history.push("/")
+    if (location.pathname !== "/react-week22/") {
+      history.push("/react-week22/")
     }
   }
 
@@ -108,10 +108,10 @@ export default function Header() {
         <NavbarRight>
           <NavbarList>
             <NavbarListRight>
-              {user && <Nav to="/write" $active={location.pathname === "/write"}>Write a story</Nav>}
-              {user && <Nav to="/" onClick={handleLogout}>Sign out</Nav>}
-              {!user && <Nav to="/signin" $active={location.pathname === "/signin"}>Sign in</Nav>}
-              {!user && <Nav to="/signup" $active={location.pathname === "/signup"}>Sign up</Nav>}
+              {user && <Nav to="/react-week22/write" $active={location.pathname === "/react-week22/write"}>Write a story</Nav>}
+              {user && <Nav to="/react-week22/" onClick={handleLogout}>Sign out</Nav>}
+              {!user && <Nav to="/react-week22/signin" $active={location.pathname === "/react-week22/signin"}>Sign in</Nav>}
+              {!user && <Nav to="/react-week22/signup" $active={location.pathname === "/react-week22/signup"}>Sign up</Nav>}
             </NavbarListRight>
             <NavbarAvatar>
               <NavbarAvatarImage/>
