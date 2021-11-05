@@ -47,10 +47,10 @@ function App() {
             <Route path="/react-week22">
               <WritePage />
             </Route>
-            <Route path="/react-week22/signin">
+            <Route path="/react-week22">
               <SignInPage />
             </Route>
-            <Route path="/react-week22/signup">
+            <Route path="/react-week22">
               <SignUpPage />
             </Route>
             <Route path="/react-week22/page/:slug">
