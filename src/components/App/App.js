@@ -44,16 +44,16 @@ function App() {
             <Route path="/react-week22/">
               <AboutPage />
             </Route>
-            <Route basename="/react-week22/write">
+            <Route path="/react-week22/write">
               <WritePage />
             </Route>
-            <Route basename="/react-week22/signin">
+            <Route path="/react-week22/signin">
               <SignInPage />
             </Route>
-            <Route basename="/react-week22/signup">
+            <Route path="/react-week22/signup">
               <SignUpPage />
             </Route>
-            <Route basename="/react-week22/page/:slug">
+            <Route path="/react-week22/page/:slug">
               <SinglePage />
             </Route>
           </Switch>
